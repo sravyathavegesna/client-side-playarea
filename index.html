@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Wireframe to a HTML/CSS</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div class="container well">
-            <h1>sample using bootstrap.</h1>
-            <input type="number">
-            <button type="button">Enter any number.</button>
-        
+
+</head>
+
+<body ng-app>
+    <div class="container well">
+        <h1>sample using bootstrap.</h1>
+        <input type="number">
+        <button type="button">Enter any number.</button>
+
+        <hr>
+        <div class="row">
+            <h1>Adding Angular Capabilities</h1>
+            <input type="text" ng-model="sample"></input>
+            The Value you entered is : {{sample}}
         </div>
-    </body>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+</body>
+
 </html>

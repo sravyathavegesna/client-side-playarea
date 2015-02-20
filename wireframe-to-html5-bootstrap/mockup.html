@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ASSIGNMENT BOOTSTRAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        #hline {
+            color: "light-grey";
+        }
+        #back_arrow {
+            margin-bottom: 10px;
+        }
+        .lastRow_in_table {
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 22px;
+        }
+        #follow_spacing{
+            padding-right: 15px;
+        }
+        #add-link{
+            color: #78AB46;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default">
+        <button type="button" class="btn btn-default btn-sm" id="back_arrow">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+        </button>
+        <div class="btn-group" role="group">
+
+            <button type="button" class="btn btn-default">Edit</button>
+            <button type="button" class="btn btn-default">Delete</button>
+            <button type="button" class="btn btn-default">Clone</button>
+
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                More Actions <span class="caret"></span>
+            </button>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="glyphicon glyphicon-cog" ></span><span class="caret"></span>
+            </button>
+        </div>
+    </nav>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="http://media02.hongkiat.com/twitter-bootstrap/twitter-bootstrap.jpg" alt="This is a sample image" class="img-thumbnail">
+            </div>
+            <div class="col-xs-6">
+                <p>Charles Stone-Zillum Inc.</p>
+                <table border="0">
+                    <tr>
+                        <td>Title</td>
+                        <td>:</td>
+                        <td class="lastRow_in_table">VP Sales</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td class="lastRow_in_table" id="add-link">Charless@Zillum.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td>:</td>
+                        <td class="lastRow_in_table">800-555-5296 <span class="glyphicon glyphicon-earphone"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile</td>
+                        <td>:</td>
+                        <td class="lastRow_in_table">218-555-5296 <span class="glyphicon glyphicon-earphone"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Mailing Country</td>
+                        <td>:</td>
+                        <td class="lastRow_in_table">United States</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-3">
+                Last Update : 19 days ago
+                <div><a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-plus" id="follow_spacing"></span><bold>Follow</bold></a></div>
+            </div>
+        </div>
+
+        <div class="row">
+            Notes for this contact
+            <div>
+                <textarea placeholder="Add a Note..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4> Copyright &copy; Sravyatha Vegesna </h4>
+    </div>
+
+
+</body>
+
+</html>

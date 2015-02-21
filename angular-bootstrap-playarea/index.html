@@ -7,23 +7,55 @@
 
 </head>
 
-<body ng-app>
-    <div class="container well">
-        <h1>sample using bootstrap.</h1>
-        <input type="number">
-        <button type="button">Enter any number.</button>
+<body ng-app="myApp">
+<div class="container well">
+    <h1>sample using bootstrap.</h1>
+    <input type="number">
+    <button type="button">Enter any number.</button>
 
-        <hr>
-        <div class="row">
-            <h1>Adding Angular Capabilities</h1>
-            <input type="text" ng-model="sample"></input>
-            The Value you entered is : {{sample}}
+    <hr>
+    <div class="row">
+        <h1>Adding Angular Capabilities</h1>
+        <input type="text" ng-model="sample">
+        The Value you entered is : {{sample}}
+    </div>
+    <hr>
+    <div ng-controller="MyController">
+        <div ng-repeat="l in legends">
+            <ul>
+                <li>{{l.name}}</li>
+                <ul>
+                    <li ng-repeat="v in l.values">
+                        <input type="checkbox" checklist-model="user.items" checklist-value="v"> {{v.name}}
+                    </li>
+                </ul>
+
+            </ul>
         </div>
+        <table class="table table-bordered">
+            <thead><tr>
+            <td>Item</td>
+            <td>Price</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="cart in user.items">
+                <td>{{cart.name}}</td>
+                <td>{{cart.price}}</td>
+            </tr>
+            </tbody>
+        </table>
 
     </div>
+    <hr>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script src="checklist-model.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>

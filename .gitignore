@@ -1,9 +1,4 @@
 *.name
 *.iml
-jquery-playarea/buttonspopulation/.idea/encodings.xml
-jquery-playarea/buttonspopulation/.idea/misc.xml
-jquery-playarea/buttonspopulation/.idea/modules.xml
-jquery-playarea/buttonspopulation/.idea/scopes/scope_settings.xml
-jquery-playarea/buttonspopulation/.idea/vcs.xml
-jquery-playarea/buttonspopulation/.idea/workspace.xml
 *.xml
+node_modules

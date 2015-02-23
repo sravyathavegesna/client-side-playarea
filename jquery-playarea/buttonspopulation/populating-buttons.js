@@ -3,9 +3,10 @@
  */
 $(document).ready(function(){
     var buttons="";
+    var count=0;
         $('#firstbutton').click(function(){
-
-        buttons += "<p><button type='button' class='btn btn-primary' id='nextbuttons'>"+"Click me to populate"+"</button></p>";
+        count++;
+        buttons += "<p><button type='button' class='btn btn-primary' id='nextbuttons'>"+"Clicked button : "+count+"</button></p>";
             $('#pid').html(buttons);
     });
 });

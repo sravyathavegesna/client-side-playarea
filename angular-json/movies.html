@@ -1,0 +1,27 @@
+<div class="row">
+
+    <div class="media">
+        <div class="col-xs-1">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="http://content6.flixster.com/movie/11/13/43/11134356_tmb.jpg" alt="Movie poster">
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-11">
+            <div ng-repeat="mov in moviesjson.movies">
+                <div class="media-body">
+                    <h1 class="media-heading">{{mov.title}}</h1>
+                    <p>{{mov.synopsis}}</p>
+                </div>
+                Cast:
+            <div ng-repeat="cast in mov.abridged_cast">
+                <div class="media-body">
+                    <div class="media-heading">{{cast.name}} </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

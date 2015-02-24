@@ -1,0 +1,27 @@
+<input type="text" class="form-control" ng-model="locationName" placeholder="Enter location here.">
+<button type="button" ng-click="getweather()" class="btn btn-primary">Get weather</button>
+<table class="table table-bordered table-striped table-hover" ng-if="weatherdata">
+    <thead>
+        <tr>
+           
+            <td>Day of week</td>
+            <td>High</td>
+            <td>Low</td>
+            <td>high_celsius</td>
+            <td>low_celsius</td>
+            <td>Condition</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="weather in weatherdata">
+            
+            <td>{{weather.day_of_week}}</td>
+            <td>{{weather.high}}</td>
+            <td>{{weather.low}}</td>
+            <td>{{weather.high_celsius}}</td>
+            <td>{{weather.low_celsius}}</td>
+            <td>{{weather.condition}}</td>
+        </tr>
+
+    </tbody>
+</table>
